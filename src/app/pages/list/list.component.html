@@ -9,7 +9,7 @@ infinite-scroll
      placeholder="Buscar una carta"
      [formControl]="cardTextFormControl">
      <br>
-        <h3 class="text-muted">
+        <h3 *ngIf="cards.length > 0" class="text-muted">
             Cantidad de cartas: {{cards.length}}
         </h3>
     <div class="card">
@@ -18,6 +18,6 @@ infinite-scroll
         </app-card>
     </div>
     <h2 class="text-muted" *ngIf="cards.length == 0">
-        No hay cartas que mostrar
+        No hay cartas para mostrar
     </h2>
 </div>
