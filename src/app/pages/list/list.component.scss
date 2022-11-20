@@ -6,9 +6,10 @@
 }
 
 .card{
+    border: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
-    gap:0.5em;
+    grid-template-columns: repeat(auto-fill, minmax(9.5em, 1fr));
+    gap:4.5em;
     margin-top: 2em;
-
+    background-color: rgb(22, 25, 37)
 }
